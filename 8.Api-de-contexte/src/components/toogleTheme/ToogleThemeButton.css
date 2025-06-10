@@ -1,0 +1,29 @@
+.toogle-theme-btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2c2c;
+    color: white;
+    cursor: pointer;
+}
+
+.toogle-theme-btn span{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.toogle-theme-btn img{
+    margin-left: 15px;
+    width: 30px;
+}
+
+.body.dark .toogle-theme-btn{
+    background-color: #f1f1f1;
+    color: black;
+}
