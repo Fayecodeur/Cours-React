@@ -1,0 +1,6 @@
+{
+  "posts": [
+    { "id": 1, "title": "Hello React Query", "content": "Mon premier post 🚀" },
+    { "id": 2, "title": "Deuxième post", "content": "Toujours motivé 💪" }
+  ]
+}
