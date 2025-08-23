@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Home from "./pages/Home.jsx";
 import Authors from "./pages/Authors.jsx";
 import Footer from "./components/Footer.jsx";
+import PostDetails from "./pages/PostDetails.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/authors" element={<Authors />} />
+          <Route path="/posts/:id" element={<PostDetails />} />
         </Routes>
       </main>
       <Footer />
