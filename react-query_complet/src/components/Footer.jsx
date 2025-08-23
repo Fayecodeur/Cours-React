@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <code className="text-center text-gray-600 bg-blue-100 py-3">
+      React Query V4
+    </code>
+  );
 }
