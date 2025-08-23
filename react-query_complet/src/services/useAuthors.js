@@ -9,8 +9,8 @@ export default function useAuthors() {
         const response = await axios.get("http://localhost:3000/users");
         return response.data;
       } catch (error) {
-        console.error("Erreur " + error);
-        throw new Error("Erreur lors de la réupération des auteurs");
+        console.error("Error " + error);
+        throw new Error("Erreur lors de la récupération des auteurs");
       }
     },
   });
