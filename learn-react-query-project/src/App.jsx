@@ -1,9 +1,12 @@
-import { createBrowserRouter } from "react-router-dom"
-import { Home } from "./pages/Home"
-import { PostDetails } from "./pages/PostDetails"
-import { RouterProvider } from "react-router-dom"
-import { Layout } from "./components/layouts/Layout"
-import { Users } from "./pages/Users"
+import { createBrowserRouter } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { PostDetails } from "./pages/PostDetails";
+import { RouterProvider } from "react-router-dom";
+import { Layout } from "./components/layouts/Layout";
+import { Users } from "./pages/Users";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const client = new QueryClient();
 
 const router = createBrowserRouter([
   {
@@ -12,24 +15,26 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home />
+        element: <Home />,
       },
       {
         path: "/authors",
-        element: <Users />
+        element: <Users />,
       },
       {
         path: "/posts/:postId",
-        element: <PostDetails />
-      }
-    ]
+        element: <PostDetails />,
+      },
+    ],
   },
-])
+]);
 
 function App() {
   return (
-    <RouterProvider router={router} />
-  )
+    <QueryClientProvider client={client}>
+      <RouterProvider router={router} />;
+    </QueryClientProvider>
+  );
 }
 
-export default App
+export default App;
