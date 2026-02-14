@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "Prénom": "Ali ",
+      "nom": "Ndiaye",
+      "sexe": "homme",
+      "email": "ali@gmail.com"
+    }
+  ]
+}
