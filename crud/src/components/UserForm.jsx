@@ -24,7 +24,7 @@ export default function UserForm() {
       toast.success("utilisateur ajouté avec succés ");
     },
     onError: () => {
-      toast.success("Echec lors de l'ajout");
+      toast.error("Echec lors de l'ajout");
     },
   });
   const sumbitForm = async (data) => {
