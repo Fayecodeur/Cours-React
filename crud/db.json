@@ -1,11 +1,25 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "prenom": "Ali ",
       "nom": "Ndiaye",
       "sexe": "homme",
       "email": "ali@gmail.com"
+    },
+    {
+      "id": "b73f",
+      "prenom": "Thiéno Barra",
+      "nom": "Diallo",
+      "email": "thierno@gmail.com",
+      "sexe": "homme"
+    },
+    {
+      "id": "b48c",
+      "prenom": "Demba",
+      "nom": "Faye",
+      "email": "fayecodeur99@gmail.com",
+      "sexe": "homme"
     }
   ]
 }
