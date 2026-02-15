@@ -10,3 +10,8 @@ export const addUser = async (user) => {
   const res = await axios.post(API_URL, user);
   return res.data;
 };
+
+export const deleteUser = async (id) => {
+  const res = await axios.delete(`${API_URL}/${id}`);
+  return res.data;
+};
