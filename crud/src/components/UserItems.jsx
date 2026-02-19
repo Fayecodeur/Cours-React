@@ -1,6 +1,7 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { deleteUser } from "../api/userApi";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 export default function UserItems({ user: { id, prenom, nom, email, sexe } }) {
   const queryClient = useQueryClient();
@@ -22,7 +23,10 @@ export default function UserItems({ user: { id, prenom, nom, email, sexe } }) {
       <td>{email}</td>
       <td>{sexe}</td>
       <td>
-        <button className="btn btn-warning btn-sm me-3">Modifier</button>
+        <Link to={`/edit/user/${id}`} className="btn btn-warning btn-sm me-3">
+          Modifier
+        </Link>
+
         <button
           onClick={() => mutation.mutate(id)}
           className="btn btn-danger btn-sm"
