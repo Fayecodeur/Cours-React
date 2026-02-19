@@ -84,7 +84,6 @@ export default function UserForm() {
           {/* Sexe */}
           <div className="col-md-3">
             <label className="form-label d-block">Sexe</label>
-
             <div className="form-check form-check-inline">
               <input
                 id="homme"
@@ -98,11 +97,7 @@ export default function UserForm() {
               <label className="form-check-label" htmlFor="homme">
                 Masculin
               </label>
-              {errors.sexe && (
-                <small className="text-danger"> {errors.sexe.message} </small>
-              )}
             </div>
-
             <div className="form-check form-check-inline">
               <input
                 className="form-check-input"
@@ -116,10 +111,11 @@ export default function UserForm() {
               <label className="form-check-label" htmlFor="femme">
                 Féminin
               </label>
-              {errors.sexe && (
-                <small className="text-danger"> {errors.sexe.message} </small>
-              )}
-            </div>
+            </div>{" "}
+            <br />
+            {errors.sexe && (
+              <small className="text-danger"> {errors.sexe.message} </small>
+            )}
           </div>
         </div>
 
