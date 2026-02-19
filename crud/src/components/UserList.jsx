@@ -27,7 +27,7 @@ export default function UserList() {
       )}
 
       {!isLoading && !error && (
-        <table className="table table-striped table-hover">
+        <table className="table table-sm table-striped table-hover">
           <thead>
             <tr>
               <th>Prénom</th>
